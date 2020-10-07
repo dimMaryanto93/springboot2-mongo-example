@@ -27,10 +27,10 @@ spring:
       repositories:
         type: reactive
       authentication-database: ${MONGO_AUTH_SOURCE:admin}
-  logging:
-    level:
-      org.springframework: ERROR
-      com.tabeldata: ${LOG_LEVEL:DEBUG}
-    file:
-      name: ${LOG_LOCATION:./logs/${spring.application.name}.log}
+logging:
+  level:
+    org.springframework: ERROR
+    com.tabeldata: ${LOG_LEVEL:DEBUG}
+  file:
+    name: ${LOG_LOCATION:./.logs/${spring.application.name}.log}
 

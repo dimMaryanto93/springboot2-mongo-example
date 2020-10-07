@@ -1,4 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
+.logs/
 ### NetBeans template
 **/nbproject/private/
 **/nbproject/Makefile-*.mk
