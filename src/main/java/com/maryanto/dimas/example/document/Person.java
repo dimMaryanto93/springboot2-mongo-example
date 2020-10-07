@@ -2,8 +2,9 @@ package com.maryanto.dimas.example.document;
 
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.time.LocalDate;
 
@@ -12,11 +13,12 @@ import java.time.LocalDate;
 @Document
 public class Person {
 
-    @MongoId
+    @Id
     private String id;
     private String firstName;
     private String lastName;
     private LocalDate birthDate;
+    @DBRef
     private Address address;
 
 }
