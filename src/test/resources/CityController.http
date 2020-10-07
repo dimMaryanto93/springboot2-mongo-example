@@ -1,0 +1,22 @@
+GET http://{{host}}:{{port}}{{context-path}}/api/v1/city/list
+Content-Type: application/json
+
+### find all ###
+
+GET http://{{host}}:{{port}}{{context-path}}/api/v1/city/001/findById
+Content-Type: application/json
+
+### find by id ###
+
+POST http://{{host}}:{{port}}{{context-path}}/api/v1/city/new
+Content-Type: application/json
+
+{
+  "code": "1000",
+  "name": "Kota Bandung",
+  "province": {
+    "code": "0032",
+    "name": "Jawa Barat"
+  }
+}
+
