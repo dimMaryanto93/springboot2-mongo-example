@@ -3,7 +3,6 @@ package com.maryanto.dimas.example.service;
 import com.maryanto.dimas.example.document.City;
 import com.maryanto.dimas.example.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,9 +14,6 @@ public class CityService {
 
     @Autowired
     private CityRepository repository;
-
-    @Autowired
-    private MongoTemplate template;
 
     @Transactional
     public City save(City city) {

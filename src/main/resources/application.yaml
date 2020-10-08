@@ -27,6 +27,7 @@ spring:
       repositories:
         type: auto
       authentication-database: ${MONGO_AUTH_SOURCE:admin}
+      replica-set-name: rs0
 logging:
   level:
     org.springframework: ERROR
