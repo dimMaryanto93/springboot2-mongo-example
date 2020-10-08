@@ -27,10 +27,20 @@ spring:
       repositories:
         type: auto
       authentication-database: ${MONGO_AUTH_SOURCE:admin}
-      replica-set-name: rs0
+#      replica-set-name: rs0
+      auto-index-creation: false
+  session:
+    mongodb:
+      collection-name: ${spring.application.name}-sessions
 logging:
   level:
     org.springframework: ERROR
     com.tabeldata: ${LOG_LEVEL:DEBUG}
   file:
     name: ${LOG_LOCATION:./.logs/${spring.application.name}.log}
+mongock:
+  enabled: true
+  change-logs-scan-package:
+    - com.maryanto.dimas.example.migration
+  change-log-collection-name: changeVersions
+  transaction-enabled: false

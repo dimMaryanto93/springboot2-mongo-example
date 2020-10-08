@@ -10,7 +10,6 @@ services:
       - MONGO_INITDB_DATABASE
     volumes:
       - mongo_data:/data/db
-    entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0" ]
     networks:
       - mongo_network
   mongo-express:

@@ -9,5 +9,5 @@
 ### Enabled transactional in mongodb
 
 ```bash
-mongo -u your-username -p your-password --eval "rs.initiate()"
+mongo -u master_user -p master_password --eval "rs.initiate()"
 ```

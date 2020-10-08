@@ -6,4 +6,4 @@
 
 # `v2020.10.08.12.57-release`
 
-- Enabled transaction manager
+- Enabled Schema Migration with [mongock.io](mongock.io)
