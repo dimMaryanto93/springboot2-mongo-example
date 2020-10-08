@@ -3,7 +3,7 @@ Content-Type: application/json
 
 ### find all ###
 
-GET http://{{host}}:{{port}}{{context-path}}/api/v1/city/5f7d6bd47cccac7b0e1a520d/findById
+GET http://{{host}}:{{port}}{{context-path}}/api/v1/city/5f7ea3c36841584082d3dcce/findById
 Content-Type: application/json
 
 ### find by id ###
@@ -15,7 +15,7 @@ Content-Type: application/json
   "code": "1000",
   "name": "Kota Bandung",
   "province": {
-    "id": "5f7d6bc97cccac7b0e1a520c"
+    "id": "5f7ea3c36841584082d3dcce"
   }
 }
 

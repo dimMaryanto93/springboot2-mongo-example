@@ -15,7 +15,6 @@ public class ProvinceService implements ServiceCrudPattern<Province, String> {
     @Autowired
     private ProvinceRepository repository;
 
-
     @Override
     public Optional<Province> findId(String id) {
         return this.repository.findById(id);

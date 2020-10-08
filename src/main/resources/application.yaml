@@ -25,7 +25,7 @@ spring:
       port: ${MONGO_PORT:27017}
       uuid-representation: java_legacy
       repositories:
-        type: reactive
+        type: auto
       authentication-database: ${MONGO_AUTH_SOURCE:admin}
 logging:
   level:
@@ -33,4 +33,3 @@ logging:
     com.tabeldata: ${LOG_LEVEL:DEBUG}
   file:
     name: ${LOG_LOCATION:./.logs/${spring.application.name}.log}
-
